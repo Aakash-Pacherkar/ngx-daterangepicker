@@ -17,9 +17,10 @@
                     (click)="clickRange($event, range)"
                     [disabled]="disableRange(range)"
                     [ngClass]="{'active': range === chosenRange, 'chevron-right': range === 'Custom Range'}">{{range}}</button>
-          </li>
-        </ul>
-    </div>
+              </li>
+            </ul>
+        </div>
+    </ng-container>
     <div class="calendar" [ngClass]="{right: singleDatePicker, left: !singleDatePicker}"
         *ngIf="showCalInRanges">
         <div class="calendar-table">
